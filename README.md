@@ -9,15 +9,18 @@
    cd wikimedia-event-monitor
    ```
 
-2. Install dependencies:
+2. Set up the backend:
 
+   ```sh
+   cd backend
+   npm install
+   node server.js
+   ```
+
+3. Set up the front-end:
    ```sh
    cd client
    npm install
-   ```
-
-3. Start the application:
-   ```sh
    npm start
    ```
 
@@ -27,7 +30,3 @@
 - Filtering of events by various criteria
 - Marking events as seen
 - Optional notifications for events of interest
-
-## Deployment
-
-- Follow the platform-specific instructions to deploy the application.
