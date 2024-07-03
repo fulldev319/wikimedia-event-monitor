@@ -1,5 +1,7 @@
 .filter-controls {
   display: flex;
+  justify-content: center;
+  width: 100%;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
@@ -7,8 +9,8 @@
 
 .filter-controls label {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
+  align-items: center;
+  margin-right: 10px;
 }
 
 .filter-controls input {

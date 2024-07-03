@@ -39,9 +39,13 @@ const EventStream = () => {
         const regex = new RegExp(filters[filterKey], "i");
         return regex.test(event.title);
       } else if (filterKey === "domain") {
-        return event.meta.domain.includes(filters[filterKey]);
+        return filters[filterKey]
+          ? event.meta.domain.includes(filters[filterKey])
+          : true;
       } else if (filterKey === "namespace") {
-        return event.namespace.toString() === filters[filterKey];
+        return filters[filterKey]
+          ? event.namespace.toString() === filters[filterKey]
+          : true;
       } else {
         return true;
       }
